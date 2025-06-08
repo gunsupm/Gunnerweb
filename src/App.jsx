@@ -80,6 +80,9 @@ return(
   <Home 
     id='home'
     currentSectionColor={currentSectionColor}
+    activeSectionId={activeSectionId}
+    scrollToSection={scrollToSection}
+    navLinks={navLinks}
   />
   <About 
   id='about' 
