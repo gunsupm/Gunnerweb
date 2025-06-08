@@ -10,7 +10,9 @@ const Home = ({currentSectionColor, scrollToSection}) =>{
       <h1>Hello!</h1>
       <p>I am gunner</p>
       <h2>Welcome to my website</h2>
-      <a href="#about">let's start</a>
+      <a href="#about">
+         <span>let's start</span>
+        </a>
       </div>
       <div className={style.img}>
       <img src={labtoploco} alt="Labtop locos" />

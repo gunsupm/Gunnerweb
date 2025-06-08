@@ -8,3 +8,58 @@
   position: relative;
   transition: 1s
 }
+.content{
+margin: 100px 0 0 0;
+position: relative;
+display: flex;
+height: auto;
+gap: 80px;
+}
+.content h1{
+  margin: 0;
+  text-transform: uppercase;
+  font-family: roboto,sans-serif;
+  font-size: 84px;
+  font-weight:700;
+  color: #000000
+}
+.name{
+  font-family: Josefin Sans,sans-serif;
+  font-size: 32px;
+  color: #DE3163;
+  font-weight: 500;
+  margin: 20px;
+}
+.content h2{
+  font-family: Josefin Sans,sans-serif;
+  color: #DE3163;
+  font-weight:700;
+    margin: 20px;
+}
+.content span{
+  color: #301934;
+}
+.info{
+  font-family: Josefin Sans,sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #000000;
+  margin: 20px;
+  line-height: 50px;
+}
+.pic img{
+  width: 280px;
+  height: auto;
+}
+
+@media (max-width:1024px) {
+  .content{
+            flex-direction: column; 
+        align-items: center;
+        right: 0px;
+        margin-top: 30px; 
+        gap: 30px; 
+        max-width: 95%; 
+    }
+  
+}
