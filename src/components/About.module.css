@@ -1,0 +1,10 @@
+.aboutcontainer {
+  min-width: 100vw;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#FFB6C1;
+  position: relative;
+  transition: 1s
+}

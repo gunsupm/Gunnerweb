@@ -1,0 +1,11 @@
+.contactsec{
+  min-width: 100vw;
+  min-height: 216px; 
+  background-color: #301934;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 1s
+
+}

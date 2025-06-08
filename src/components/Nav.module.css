@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.Navbar {
+    max-width: 100%;
+    min-width: 100vw;
+    height: 140px;
+    background-color: #301934;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+ }
+ 
+ .navItem{
+    list-style: none;
+    text-transform: uppercase;
+    display: inline;
+    font-family: "Josefin Sans";
+    font-weight: 500px ;
+    margin: 40px;
+ }
+.navLink{
+    text-decoration: none ;
+    color: #DE3163;
+}
+
+.navLink.active {
+  color: white; /* สีเมื่อ Active */
+}
