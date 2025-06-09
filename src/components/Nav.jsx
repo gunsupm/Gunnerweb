@@ -13,7 +13,7 @@
               <a
                 href={link.href}
                 onClick={() => scrollToSection(link.id)} 
-                className={`${style.navLink} ${activeSectionId === link.id ? style.active : ''}`}
+                className={`${style.navLink} ${activeSectionId === link.id }`} 
               >
                 {link.name}
               </a>

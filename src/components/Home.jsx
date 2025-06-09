@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Home.module.css'
 import labtoploco from '../assets/image/Labtop icon.png'
-const Home = ({currentSectionColor, scrollToSection}) =>{
+const Home = ({currentSectionColor,}) =>{
   return (
     <>
     <section id='home' className={style.homesec}  style={{ backgroundColor:currentSectionColor }}>

@@ -38,23 +38,30 @@ function App() {
 
     const observer = new IntersectionObserver(     // สร้าง IntersectionObserver
       entries => {
-        let currentVisibleSection = null; 
+        let currentActiveSectionId = null; 
+        let maxRatio = 0;
         entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            currentVisibleSection = entry.target.id;
+            if (entry.isIntersecting) {
+            // และมีส่วนที่มองเห็นมากกว่า Section อื่นๆ ที่เคยเจอ
+            if (entry.intersectionRatio > maxRatio) {
+              maxRatio = entry.intersectionRatio;
+              currentActiveSectionId = entry.target.id;
+            }
           }
-        });
-
-        if (currentVisibleSection && currentVisibleSection !== activeSectionId) {
-          setActiveSectionId(currentVisibleSection); // อัปเดต state activeSectionI
-          const activeLink = navLinks.find(link => link.id === currentVisibleSection);
+        }); 
+      // อัปเดต state เมื่อพบ Section ที่ เปลี่ยนไป
+        if (currentActiveSectionId && currentActiveSectionId !== activeSectionId) {
+          setActiveSectionId(currentActiveSectionId); // อัปเดต state activeSectionI
+          const activeLink = navLinks.find(link => link.id === currentActiveSectionId);
           if (activeLink) {
                         setCurrentSectionColor(activeLink.color);//อัปเดคาีพื้นหลัง
                 
         }
+        
       }
+      
       },
-      { threshold: 0.5 } // กำหนดว่า Section ต้องอยู่ในจอ 70% ถึงจะนับว่า Intersecting
+      { threshold: 0.6} // กำหนดว่า Section ต้องอยู่ในจอ กี่ % ถึงจะนับว่า Intersecting
     );
 
     sections.forEach(sec => {
@@ -80,9 +87,6 @@ return(
   <Home 
     id='home'
     currentSectionColor={currentSectionColor}
-    activeSectionId={activeSectionId}
-    scrollToSection={scrollToSection}
-    navLinks={navLinks}
   />
   <About 
   id='about' 
