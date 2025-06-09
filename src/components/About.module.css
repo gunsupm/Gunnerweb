@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#FFB6C1;
   position: relative;
   transition: 1s
 }

@@ -61,7 +61,7 @@ function App() {
       }
       
       },
-      { threshold: 0.6} // กำหนดว่า Section ต้องอยู่ในจอ กี่ % ถึงจะนับว่า Intersecting
+      { threshold: 0.5} // กำหนดว่า Section ต้องอยู่ในจอ กี่ % ถึงจะนับว่า Intersecting
     );
 
     sections.forEach(sec => {
