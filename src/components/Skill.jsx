@@ -6,9 +6,7 @@ const Skill = ({currentSectionColor}) => {
     <section id='skill' className={style.skillsec} style={{ backgroundColor:currentSectionColor }}>
     
     <div className={style.content}>
-      <div className={style.head}>
-        <h1>skill</h1>
-      </div>
+        <h1 className={style.head}>skill</h1>
       <div className={style.box1}>
         <h2>Technical Skills</h2>
         <div className={style.skillTopics}>

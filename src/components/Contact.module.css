@@ -1,11 +1,70 @@
 .contactsec{
   min-width: 100vw;
-  min-height: 216px; 
+  min-height: 180px; 
   background-color: #301934;
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  transition: 1s
+  justify-content: center;
+  text-align: center;
+  transition: 1s;
+}
+.header{
+  font-family:Josefin Sans,sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight:700;
+  color: #ffffff;
+  margin-top: 40px;
+}
+.contact{
+ display: flex;
+ gap: 100px;
+ justify-content: center;
+ font-family:Josefin Sans,sans-serif;
+ flex-wrap: wrap;
 
 }
+.contact img {
+    width: 50px; 
+    height: 50px;
+}
+.contact img ,
+.contact p{
+  cursor: pointer;
+  
+}
+.ig,
+.facebook,
+.gmail,
+.github{
+  gap:10px;
+  display: flex;
+    color: 	#F2D2BD;
+    font-size: 18px;
+      font-weight:700;
+}
+@media (max-width:1024px) {
+  .contactsec{
+   padding: 20px 0;
+     min-height: auto;
+  }
+   .content{
+    flex-direction: column;
+        align-items: center;
+        margin-top: 0; 
+        gap: 30px;
+        width: 95%;
+   }
+    
+.ig,
+.facebook,
+.gmail,
+.github{
+  gap:10px;
+  display: inline;
+  flex-direction: column;
+    color: 	#F2D2BD;
+    font-size: 18px;
+      font-weight:700;
+}
+  }

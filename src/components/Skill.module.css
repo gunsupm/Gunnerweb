@@ -42,19 +42,19 @@ body{
   font-weight: 600;
   font-size: 22px;
   text-align: center;
-  margin-top: 30px;
+  margin: 30px 0 10px 0;
   color: #DE3163;
 }
+.box3 h2{
+  padding: 0 0 20px 0;
+}
 .skillTopics {
-  text-align: center;
   justify-items: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
 }
 .skillcolumnitem ul {
   text-align:left;
-  padding-left: 15px;
-  margin: 0;
 }
 .skillcolumnitem ul li{
   margin: 0;
@@ -74,13 +74,13 @@ body{
   left: 0;
 } 
 .box3{
+  padding-top: 30px;
   margin-left: auto; 
   right: 0;
 }
 
 @media (max-width:1024px) {
   .skillsec{ 
-    text-align: center;
     justify-content: center;
     
   }
@@ -98,8 +98,16 @@ body{
     .box1, 
     .box2, 
     .box3 {
-  margin-left: 0;
-  margin-right: 0;
-  width: 90vw;}
+    font-size: 16px;
+     margin: 0;
+     width: 95vw;
+     height: auto;
+     text-align: left;
+}
+
+    .skillTopics {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr); 
+}
   
 }
