@@ -21,7 +21,7 @@ const Project = ({currentSectionColor}) => {
                   <img  src={FirstWeb } alt="My First Website.png" />
                 </div>
                 <h2>First Personal Website</h2>
-                <p>My First Personal Website 
+                <p>First time writing web code
                   <br/>By HTML CSS JS
                 </p>
               </div>
@@ -35,7 +35,8 @@ const Project = ({currentSectionColor}) => {
                 <div className={style.projectimg}>
                   <img  src={PersonalWeb} alt="My First Website.png" />
                 </div>
-                <h2>Personal Website</h2>
+                <h2>Personal Website V.2
+                </h2>
                 <p>My Personal Website 
                   <br/>By React
                 </p>
@@ -43,9 +44,10 @@ const Project = ({currentSectionColor}) => {
               </div>
               </div>
               
+                {/* Project 2 */}
               <div className={style.box}>
                <div className={style.box}>
-                 <div className={style.box} onClick={onmyfirstwebsite}>
+                 <div className={style.box} onClick={null}>
               <div className={style.projectdetail}>
                 <div className={style.projectimg}>
                 </div>
